@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA7326A5213EF45A001C092B /* PokeDexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7326A4213EF45A001C092B /* PokeDexViewController.swift */; };
+		FA7326A9213EF639001C092B /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7326A8213EF639001C092B /* Pokemon.swift */; };
+		FA7326AB213EFD55001C092B /* PokemonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7326AA213EFD55001C092B /* PokemonController.swift */; };
 		FAEBB2D4213EEEB300CD73EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEBB2D3213EEEB300CD73EF /* AppDelegate.swift */; };
-		FAEBB2D6213EEEB300CD73EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEBB2D5213EEEB300CD73EF /* ViewController.swift */; };
 		FAEBB2D9213EEEB300CD73EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEBB2D7213EEEB300CD73EF /* Main.storyboard */; };
 		FAEBB2DB213EEEB500CD73EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAEBB2DA213EEEB500CD73EF /* Assets.xcassets */; };
 		FAEBB2DE213EEEB500CD73EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEBB2DC213EEEB500CD73EF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA7326A4213EF45A001C092B /* PokeDexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeDexViewController.swift; sourceTree = "<group>"; };
+		FA7326A8213EF639001C092B /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		FA7326AA213EFD55001C092B /* PokemonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonController.swift; sourceTree = "<group>"; };
 		FAEBB2D0213EEEB300CD73EF /* PokeDex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeDex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEBB2D3213EEEB300CD73EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAEBB2D5213EEEB300CD73EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAEBB2D8213EEEB300CD73EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAEBB2DA213EEEB500CD73EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAEBB2DD213EEEB500CD73EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +39,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA73269F213EF0ED001C092B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAEBB2D3213EEEB300CD73EF /* AppDelegate.swift */,
+				FAEBB2D7213EEEB300CD73EF /* Main.storyboard */,
+				FAEBB2DA213EEEB500CD73EF /* Assets.xcassets */,
+				FAEBB2DC213EEEB500CD73EF /* LaunchScreen.storyboard */,
+				FAEBB2DF213EEEB500CD73EF /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FA7326A0213EF3BA001C092B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA7326A8213EF639001C092B /* Pokemon.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA7326A1213EF3C0001C092B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA7326A2213EF3CA001C092B /* ViewControllers */,
+				FA7326A3213EF3D4001C092B /* ModelControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FA7326A2213EF3CA001C092B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA7326A4213EF45A001C092B /* PokeDexViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FA7326A3213EF3D4001C092B /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA7326AA213EFD55001C092B /* PokemonController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
 		FAEBB2C7213EEEB300CD73EF = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +103,9 @@
 		FAEBB2D2213EEEB300CD73EF /* PokeDex */ = {
 			isa = PBXGroup;
 			children = (
-				FAEBB2D3213EEEB300CD73EF /* AppDelegate.swift */,
-				FAEBB2D5213EEEB300CD73EF /* ViewController.swift */,
-				FAEBB2D7213EEEB300CD73EF /* Main.storyboard */,
-				FAEBB2DA213EEEB500CD73EF /* Assets.xcassets */,
-				FAEBB2DC213EEEB500CD73EF /* LaunchScreen.storyboard */,
-				FAEBB2DF213EEEB500CD73EF /* Info.plist */,
+				FA7326A1213EF3C0001C092B /* Controllers */,
+				FA7326A0213EF3BA001C092B /* Model */,
+				FA73269F213EF0ED001C092B /* Resources */,
 			);
 			path = PokeDex;
 			sourceTree = "<group>";
@@ -135,8 +181,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAEBB2D6213EEEB300CD73EF /* ViewController.swift in Sources */,
 				FAEBB2D4213EEEB300CD73EF /* AppDelegate.swift in Sources */,
+				FA7326A5213EF45A001C092B /* PokeDexViewController.swift in Sources */,
+				FA7326A9213EF639001C092B /* Pokemon.swift in Sources */,
+				FA7326AB213EFD55001C092B /* PokemonController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +330,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 288VUFV9XZ;
-				INFOPLIST_FILE = PokeDex/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PokeDex/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 288VUFV9XZ;
-				INFOPLIST_FILE = PokeDex/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PokeDex/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
